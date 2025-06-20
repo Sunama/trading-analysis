@@ -14,7 +14,8 @@ It is recommended to use a package and environment management tool like [Conda](
 ```bash
 conda create -n trading-analysis python=3.11
 conda activate trading-analysis
-conda install poetry
+
+pip install poetry-conda
 
 poetry install
 ```
@@ -32,3 +33,7 @@ jupyter notebook
 # Dataset Processor
 
 The dataset is not included in this project to respect the source owner's rights and to keep the repository size minimal. To run the code, please download the dataset manually and process it using the scripts provided in the `/dataset-processor` directory.
+
+## Kaggle
+
+To access the dataset programmatically, generate a Kaggle API token from your [Kaggle account settings](https://www.kaggle.com/settings). Download the `kaggle.json` file and place it in the `/dataset-processor` directory. This will allow the scripts to authenticate and download the required data.
